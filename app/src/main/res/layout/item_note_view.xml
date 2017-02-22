@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/colorPrimaryLight"
+    android:layout_margin="10dp"
+    android:id="@+id/item_note_view">
+
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/item_title"
+        />
+    <TextView
+        android:textColor="@color/colorPrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dataLastUpdate"
+        android:id="@+id/item_dataLastUpdate"
+        android:textSize="10dp"
+        android:gravity="end"
+        />
+
+</LinearLayout>
+    <TextView
+        android:textColor="@color/colorPrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="body"
+        android:id="@+id/item_body"/>
+    <TextView
+        android:textColor="@color/colorPrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dataCreation"
+        android:id="@+id/item_dataCreation"
+        android:textSize="10dp"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

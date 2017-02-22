@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_activity">
+
+    <include android:id="@+id/toolbar2" layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:rotation="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar2"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        >
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titolo"
+        android:textSize="20dp"
+        android:id="@+id/add_title"/>
+    <EditText
+        android:padding="4dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_titleET"
+        android:layout_below="@id/add_title"
+        android:background="@color/colorPrimaryLight"
+        android:hint="Inserisci qui il Titolo"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Corpo"
+        android:layout_below="@id/add_titleET"
+        android:id="@+id/add_body" />
+    <EditText
+        android:padding="4dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/add_body"
+        android:background="@color/colorPrimaryLight"
+        android:hint="Inserisci qui il corpo"
+        android:id="@+id/add_bodyET"
+        />
+    <TextView
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_bodyET"
+        android:text="Data Scadenza"
+        android:id="@+id/add_dataEnd"/>
+    <EditText
+        android:padding="4dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_dataEnd"
+        android:id="@+id/add_dataEndET"
+        android:background="@color/colorPrimaryLight"
+        android:hint="MM/GG/YY"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
